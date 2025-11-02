@@ -15,13 +15,13 @@ export default {
      *
      * 注意：不是手机号或邮箱，请在小米账号「个人信息」-「小米 ID」查看
      */
-    userId: '891882312',
+    userId: '123456',
     /**
      * 小米账号登录密码
      *
      * 如果提示登录失败，请使用 passToken 登录
      */
-    password: '19830208pan',
+    password: 'xxx',
     /**
      * （可选）小米账号 passToken
      *
@@ -45,7 +45,7 @@ export default {
     /**
      * API 密钥
      */
-    apiKey: '5c985cdb-6d4f-45b6-a0c8-4671eae2328e',
+    apiKey: 'xxx',
     /**
      * 模型名称
      */
@@ -103,3 +103,4 @@ export default {
     }
   },
 };
+
