@@ -9,25 +9,25 @@ export default {
      *
      * 如果提示找不到设备，请打开调试模式获取设备真实的 name、miotDID 或 mac 地址填入
      */
-    did: 'Xiaomi 智能音箱 Pro',
+    did: '小爱音箱Pro',
     /**
      * 小米 ID（一串数字）
      *
      * 注意：不是手机号或邮箱，请在小米账号「个人信息」-「小米 ID」查看
      */
-    userId: '1234567',
+    userId: '891882312',
     /**
      * 小米账号登录密码
      *
      * 如果提示登录失败，请使用 passToken 登录
      */
-    password: 'xxxxx',
+    password: '19830208pan',
     /**
      * （可选）小米账号 passToken
      *
      * 获取教程：https://github.com/idootop/migpt-next/issues/4
      */
-    passToken: 'xxxxxxxxx',
+    //passToken: 'xxxxxxxxx',
   },
   openai: {
     /**
@@ -40,15 +40,16 @@ export default {
      * - ❌ https://api.openai.com/v1/（最后多了一个 /
      * - ❌ https://api.openai.com/v1/chat/completions（不需要加 /chat/completions）
      */
-    baseURL: 'https://api.openai.com/v1',
+    
+    baseURL: 'https://ark.cn-beijing.volces.com/api/v3',
     /**
      * API 密钥
      */
-    apiKey: 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    apiKey: '5c985cdb-6d4f-45b6-a0c8-4671eae2328e',
     /**
      * 模型名称
      */
-    model: 'gpt-4.1-mini',
+    model: 'Doubao-1.5-pro-32k',
   },
   prompt: {
     /**
@@ -95,7 +96,7 @@ export default {
       await engine.MiNA.setVolume(50); // 音量调到 50%
 
       // 调用 MioT 的能力（请到 https://home.miot-spec.com 查询指令列表）
-      await engine.MiOT.doAction(2, 1, 50); // 音量调到 50%
+      await engine.MiOT.doAction(5, 1, text); // 音量调到 50%
 
       // 告诉 MiGPT 已经处理过这条消息了，不再使用默认的 AI 回复
       return { handled: true };
